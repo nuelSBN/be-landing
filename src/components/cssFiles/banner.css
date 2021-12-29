@@ -1,0 +1,136 @@
+.bannerContainer {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.rightContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bannertext {
+  padding: 0 40px;
+  width: 60vw;
+}
+
+.topText {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.midText {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 30px 0;
+}
+
+form {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 5px;
+  height: 300px;
+  width: 400px;
+  padding: 0 10px;
+}
+
+.inputContainer {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.inputContainer input {
+  border: none;
+  border-bottom: 2px solid #e84341;
+  width: 80%;
+  padding: 4px;
+}
+
+.inputContainer input:focus {
+  outline: none;
+}
+
+.inputContainer textarea {
+  resize: none;
+  border: none;
+  border: 2px solid #e84341;
+  padding: 4px;
+  height: 100px;
+  width: 80%;
+}
+
+.inputContainer textarea:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .bannertext {
+    flex: 1;
+  }
+  .rightContainer {
+    padding: 20px;
+  }
+
+  .topText {
+    font-size: 12px;
+  }
+  .midText {
+    font-size: 13px;
+  }
+
+  form {
+    flex: 1;
+    height: 300px;
+    width: 250px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bannerContainer {
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  .rightContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bannertext {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .topText {
+    font-size: 15px;
+  }
+  .midText {
+    font-size: 13px;
+  }
+
+  form {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 5px;
+    height: 300px;
+    width: 100%;
+    padding: 10px 30px;
+    margin-top: 10px;
+  }
+}

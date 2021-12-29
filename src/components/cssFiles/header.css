@@ -1,0 +1,20 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../assets/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 770px) {
+  header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../../assets/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+  }
+}
